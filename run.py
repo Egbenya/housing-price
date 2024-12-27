@@ -3,7 +3,7 @@ import mlflow
 experiment_name = "ElasticNet"
 entry_point = "Training"
 
-mlflow.set_tracking_uri("http://127.0.0.1:5000")
+mlflow.set_tracking_uri("http://ec2-3-91-59-37.compute-1.amazonaws.com:5000/") # "http://127.0.0.1:5000"
 
 mlflow.projects.run(
     uri=".",
